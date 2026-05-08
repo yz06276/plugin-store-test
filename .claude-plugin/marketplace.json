@@ -52,6 +52,15 @@
       }
     },
     {
+      "name": "clawvard-agent-eval",
+      "description": "Take the Clawvard entrance exam, report the result, and optionally save the agent identity token with user confirmation.",
+      "source": "./skills/clawvard-agent-eval",
+      "category": "utility",
+      "author": {
+        "name": "Clawvard"
+      }
+    },
+    {
       "name": "compound-v2-plugin",
       "description": "Compound V2 exit tool on Ethereum mainnet - redeem, repay, claim COMP for legacy V2 positions. Use compound-v3-plugin for active supply/borrow.",
       "source": "./skills/compound-v2-plugin",
@@ -391,6 +400,15 @@
       "category": "utility",
       "author": {
         "name": "yz06276"
+      }
+    },
+    {
+      "name": "sorin-skill",
+      "description": "Answer DeFi questions about tokens, pools, chains, protocols, and projects using Sahara's Sorin DeFi AI Services Gateway",
+      "source": "./skills/sorin-skill",
+      "category": "utility",
+      "author": {
+        "name": "Sahara AI"
       }
     },
     {
