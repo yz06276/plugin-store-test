@@ -887,6 +887,30 @@
       }
     },
     {
+      "name": "rootdata-crypto-plugin",
+      "version": "1.0.0",
+      "description": "RootData is a leading Web3 data platform covering crypto projects, investors, funding data, and personnel movements. This skill is the OKX-dedicated integration, isolated from the standard RootData skill with its own API key namespace and endpoints.",
+      "author": {
+        "name": "rootdata"
+      },
+      "category": "utility",
+      "tags": [
+        "defi",
+        "ranking"
+      ],
+      "type": "official",
+      "components": {
+        "skill": {
+          "repo": "okx/plugin-store",
+          "dir": "skills/rootdata-crypto-plugin"
+        }
+      },
+      "github_link": "https://github.com/okx/plugin-store/tree/main/skills/rootdata-crypto-plugin",
+      "skill_md_link": "https://raw.githubusercontent.com/okx/plugin-store/main/skills/rootdata-crypto-plugin/SKILL.md",
+      "summary_md_link": "https://raw.githubusercontent.com/okx/plugin-store/main/skills/rootdata-crypto-plugin/SUMMARY.md",
+      "modify_date": "1778222547"
+    },
+    {
       "name": "rwa-alpha",
       "version": "1.1.0",
       "description": "RWA Alpha — Real World Asset intelligence trading. Macro event detection + Polymarket confirmation + on-chain price action → auto-trade tokenized treasury/gold/yield/governance tokens via OKX DEX. Three modes: Yield Optimizer / Macro Trader / Full Alpha. Multi-chain Ethereum + Solana.",
