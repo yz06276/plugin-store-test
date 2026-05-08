@@ -13,14 +13,15 @@
 3. [Quick Start (7 Steps)](#3-quick-start-7-steps)
 4. [Plugin Structure](#4-plugin-structure)
 5. [Writing SKILL.md](#5-writing-skillmd)
-6. [Writing SUMMARY.md](#writing-summarymd)
-7. [Submitting Plugins with Source Code (Binary)](#6-submitting-plugins-with-source-code-binary)
-8. [Three Submission Modes](#7-three-submission-modes)
-9. [Onchain OS Integration](#8-onchainos-integration)
-10. [Review Process](#9-review-process)
-11. [Risk Levels](#10-risk-levels)
-12. [Rules & Restrictions](#11-rules--restrictions)
-13. [FAQ](#12-faq)
+6. [Writing SUMMARY.md](#6-writing-summarymd)
+7. [Submitting Plugins with Source Code (Binary)](#7-submitting-plugins-with-source-code-binary)
+8. [Three Submission Modes](#8-three-submission-modes)
+9. [Onchain OS Integration](#9-onchainos-integration)
+10. [Review Process](#10-review-process)
+11. [Risk Levels](#11-risk-levels)
+12. [Rules & Restrictions](#12-rules--restrictions)
+13. [FAQ](#13-faq)
+14. [Getting Help](#14-getting-help)
 
 ---
 
@@ -680,7 +681,7 @@ onchainos market price --address <TOKEN_ADDRESS> --chain solana
 
 ---
 
-## Writing SUMMARY.md
+## 6. Writing SUMMARY.md
 
 Every plugin **must** include a `SUMMARY.md` file in the same directory as `SKILL.md`. This file is an **English-language** user-facing summary with a fixed 3-section structure. CI lint will reject submissions without it (error `E150`) or with missing sections (error `E151`).
 
@@ -848,7 +849,7 @@ subprocess.run(["raydium-plugin", "swap", "--from", "USDC", "--to", "SOL",
 
 ---
 
-## 6. Submitting Plugins with Source Code (Binary)
+## 7. Submitting Plugins with Source Code (Binary)
 
 > **Important:** SKILL.md is always the entry point. Even if your Plugin includes
 > a binary, the SKILL.md is what tells the AI agent how to orchestrate
@@ -1165,7 +1166,7 @@ If these commands fail locally, our CI will also fail.
 
 ---
 
-## 7. Three Submission Modes
+## 8. Three Submission Modes
 
 ### Mode A -- Direct Submission (Recommended)
 
@@ -1256,7 +1257,7 @@ Plugins like `meme-trench-scanner` and `smart-money-signal-copy-trade`.
 
 ---
 
-## 8. Onchain OS Integration
+## 9. Onchain OS Integration
 
 ### What Is Onchain OS?
 
@@ -1315,7 +1316,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 ---
 
-## 9. Review Process
+## 10. Review Process
 
 Every plugin submission goes through a 4-phase CI pipeline.
 
@@ -1415,7 +1416,7 @@ Items reviewed before publication:
 
 ---
 
-## 10. Risk Levels
+## 11. Risk Levels
 
 Every Plugin is assigned one of three risk levels based on what it does.
 
@@ -1458,7 +1459,7 @@ The following will result in immediate rejection regardless of risk level:
 
 ---
 
-## 11. Rules & Restrictions
+## 12. Rules & Restrictions
 
 ### What You CAN Do
 
@@ -1478,7 +1479,7 @@ The following will result in immediate rejection regardless of risk level:
 
 ---
 
-## 12. FAQ
+## 13. FAQ
 
 1. **How long does the review take?**
    Automated checks complete in under 5 minutes. Human review typically takes 1-3 business days.
@@ -1523,3 +1524,13 @@ The following will result in immediate rejection regardless of risk level:
     You declared a Binary component but did not include a `build` section. Add `build.lang`, `build.source_repo`, and `build.source_commit`.
 
 ---
+
+---
+
+## 14. Getting Help
+
+- Open an [issue](https://github.com/okx/plugin-store/issues) on GitHub
+- Look at existing Plugins in `skills/` for working examples
+- Run the lint command locally before submitting -- it catches most issues
+- Check [GitHub Actions logs](https://github.com/okx/plugin-store/actions) if
+  your PR checks fail
